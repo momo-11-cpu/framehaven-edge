@@ -1,0 +1,75 @@
+{
+  "retrievedAt": "2026-10-29T12:08:19.477Z",
+  "files": [
+    {
+      "name": "anime4k-restore-s.glsl",
+      "url": "https://raw.githubusercontent.com/bloc97/Anime4K/v4.0.1/glsl/Restore/Anime4K_Restore_CNN_S.glsl",
+      "sha256": "97c24dc370ab300c108bfaa09db7f175aeff343674842c299cf3940a3d330427"
+    },
+    {
+      "name": "anime4k-upscale-s.glsl",
+      "url": "https://raw.githubusercontent.com/bloc97/Anime4K/v4.0.1/glsl/Upscale/Anime4K_Upscale_CNN_x2_S.glsl",
+      "sha256": "4c53ec2e287908f7ee7bcb266b0170421626d663576468b7d7dafc62962649a4"
+    },
+    {
+      "name": "anime4k-license.txt",
+      "url": "https://raw.githubusercontent.com/bloc97/Anime4K/v4.0.1/LICENSE",
+      "sha256": "5bad448b737378e3d0c977ad0d0521fa37ad279a7e76ea9a31d9257eeb6953f5"
+    },
+    {
+      "name": "cas.h",
+      "url": "https://raw.githubusercontent.com/GPUOpen-Effects/FidelityFX-CAS/master/ffx-cas/ffx_cas.h",
+      "sha256": "3224935584202390ca9bc0149a45973ad2269f4d874abb2ff13625263fc036e0"
+    },
+    {
+      "name": "cas-license.txt",
+      "url": "https://raw.githubusercontent.com/GPUOpen-Effects/FidelityFX-CAS/master/LICENSE.txt",
+      "sha256": "e008031a95f6f655def9eaf914118531c9e1055b8ea201eb98b9f95f1af9bec4"
+    },
+    {
+      "name": "ffmpeg-deblock.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/libavfilter/vf_deblock.c",
+      "sha256": "ac5fe3dbbc84118f9bba08e46c605e3d6e36b7b0094454a6f21d4572d7ace728"
+    },
+    {
+      "name": "ffmpeg-lgpl.txt",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/COPYING.LGPLv2.1",
+      "sha256": "b634ab5640e258563c536e658cad87080553df6f34f62269a21d554844e58bfe"
+    },
+    {
+      "name": "libplacebo-sampling.c",
+      "url": "https://raw.githubusercontent.com/haasn/libplacebo/master/src/shaders/sampling.c",
+      "sha256": "33cd8d3c74fa8b38ee3d138fd7a486b3484ecaeea8096fc9f6bccfed4d9ca276"
+    },
+    {
+      "name": "libplacebo-lgpl.txt",
+      "url": "https://raw.githubusercontent.com/haasn/libplacebo/master/LICENSE",
+      "sha256": "b3aa400aca6d2ba1f0bd03bd98d03d1fe7489a3bbb26969d72016360af8a5c9d"
+    },
+    {
+      "name": "fsrcnnx-x2-8.glsl",
+      "url": "https://github.com/igv/FSRCNN-TensorFlow/releases/download/1.1/FSRCNNX_x2_8-0-4-1.glsl",
+      "sha256": "e800dbc5c1c95185cc82216c597724533ff5f2880179f256eef600f03e8dc2ae"
+    },
+    {
+      "name": "lgpl-3.0.txt",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/COPYING.LGPLv3",
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+    },
+    {
+      "name": "gpl-3.0.txt",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/COPYING.GPLv3",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "name": "ffmpeg-bilateral.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/libavfilter/vf_bilateral.c",
+      "sha256": "81b8ae463eac1b90812b12ceef49948d6ca815f27fc2854856b3a910a5f786b9"
+    },
+    {
+      "name": "ffmpeg-postprocess.c",
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1/libpostproc/postprocess_template.c",
+      "sha256": "5d9c6c157a09a63ea5a0a7befd345918036f2757afe9c950145977be959667d4"
+    }
+  ]
+}

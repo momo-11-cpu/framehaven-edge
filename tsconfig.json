@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "ESNext", "moduleResolution": "Bundler",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"], "types": ["chrome", "@webgpu/types", "node"],
+    "strict": true, "noEmit": true, "skipLibCheck": true, "resolveJsonModule": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": ["src", "tests", "vite.config.ts"]
+}

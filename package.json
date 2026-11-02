@@ -1,0 +1,33 @@
+{
+  "name": "framehaven-edge",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "pnpm typecheck && pnpm test && pnpm build",
+    "package": "node scripts/package.mjs",
+    "serve": "node scripts/serve.mjs",
+    "release:verify": "node scripts/verify-release.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.30",
+    "@types/node": "^24.0.0",
+    "@webgpu/types": "^0.1.60",
+    "esbuild": "^0.25.0",
+    "fflate": "^0.8.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.4",
+    "wgsl_reflect": "^1.6.0"
+  },
+  "description": "帧境：面向 Edge 的本地 SDR 视频增强与 2× / 4× AI 补帧",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

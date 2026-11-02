@@ -1,0 +1,16 @@
+name: 兼容或播放问题
+description: 报告硬件兼容、补帧、增强或音画同步问题
+labels: bug
+body:
+  - type: textarea
+    attributes:
+      label: 设备与版本
+      description: 扩展版本、系统、浏览器、GPU/驱动、CPU、刷新率
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 复现与实际表现
+      description: 源尺寸/帧率、2×或4×、模式、实际呈现/迟到/忙碌/显示丢弃，以及复现步骤；勿附私人信息。
+    validations:
+      required: true

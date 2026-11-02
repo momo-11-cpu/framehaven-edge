@@ -1,0 +1,11 @@
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {unzipSync} from 'fflate';
+const pkg=JSON.parse(await readFile('package.json','utf8'));
+const bytes=await readFile(`artifacts/framehaven-edge-${pkg.version}.zip`),files=unzipSync(bytes);
+const json=name=>JSON.parse(new TextDecoder().decode(files[name]));
+if(json('manifest.json').version!==pkg.version)throw Error('Manifest version mismatch');
+for(const name of ['content.js','background.js','popup.html','options.html','model-lab.html','LICENSE','THIRD_PARTY_NOTICES.md','licenses/framegen/WEIGHTS_LICENSE.md','source/README.md','source/scripts/build.mjs'])if(!files[name])throw Error('Missing '+name);
+for(const [name,hash] of Object.entries(json('models/framegen/manifest.json').files))if(createHash('sha256').update(files['models/framegen/'+name]).digest('hex')!==hash)throw Error('Model integrity failed: '+name);
+if(Object.keys(files).some(name=>/\.(pkl|pth|onnx|wasm)$/.test(name)||/(^|\/)(\.git|node_modules|\.venv[^/]*|auth\.json)(\/|$)/.test(name)))throw Error('Unexpected development/private artifact');
+console.log(`Verified ${pkg.version}: ${bytes.length} bytes, complete local model and editable source.`);
